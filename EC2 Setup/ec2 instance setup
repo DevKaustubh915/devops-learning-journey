@@ -1,0 +1,25 @@
+# EC2 Instance Setup
+
+## Instance Configuration
+
+- AMI: Amazon Linux
+- Instance Type: t3.micro
+- Storage: 8GB gp3
+- Connection Method: EC2 Instance Connect (Browser-based SSH)
+
+## Why t3.micro?
+
+Burstable performance instance suitable for learning and lightweight workloads.
+
+## Security Group Configuration
+
+- Port 22 (SSH)
+- Port 80 (HTTP)
+- Port 8080 (Application Testing)
+
+## Key Learnings
+
+- EC2 is a virtual machine running in AWS data centers.
+- Each instance has private and public IP.
+- Security Groups act as virtual firewalls.
+- Avoid logging in as root for security reasons.
