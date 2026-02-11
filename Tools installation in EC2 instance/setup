@@ -1,0 +1,110 @@
+DevOps Journey – EC2 Tools Installation
+
+Objective
+
+Hey, I’m Kaustubh 👋
+I’m a Java developer and I’ve just started my DevOps journey.
+
+Till now I was only writing code, but I never really understood how things run on servers and in cloud. So I decided to start from basics. In this task, I created my own AWS EC2 server and installed important DevOps tools step by step.
+
+This is just the beginning, but I’m learning slowly and building my foundation properly 🚀
+
+EC2 Instance Details
+
+Cloud Provider: AWS
+Service: EC2 (Elastic Compute Cloud)
+Operating System: Amazon Linux
+Instance Type: t3.micro (Free tier)
+Storage: 8 GB gp3
+Login Method: EC2 Browser Connect
+
+This instance is acting like my personal DevOps lab server.
+
+Tools Installed in EC2
+
+Python Installation
+
+First I installed Python because many tools and automation scripts depend on Python.
+
+Commands used:
+sudo yum install python -y
+python3 --version
+
+After installation my version was Python 3.9.25.
+
+AWS CLI Installation
+
+AWS CLI is very important because it allows us to control AWS services directly from terminal instead of using AWS Console.
+
+Commands used:
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip
+" -o "awscliv2.zip"
+sudo yum install unzip -y
+unzip awscliv2.zip
+sudo ./aws/install
+aws --version
+
+After installing, my AWS CLI version was 2.33.19.
+
+Git Installation
+
+Git is required for version control and cloning repositories from GitHub.
+
+Command used:
+sudo yum install git -y
+git --version
+
+Now git is installed and ready to clone repos.
+
+Java Installation
+
+Since most enterprise applications are Java based (like Spring Boot and Jenkins), Java is required.
+
+Command used:
+sudo yum install java -y
+java --version
+
+Java installed successfully.
+
+Maven Installation
+
+Maven is used to build and package Java projects.
+
+Commands used:
+cd /opt
+wget apache maven tar file
+tar extract command
+Created maven.sh file inside /etc/profile.d
+Added MAVEN_HOME and PATH variables
+Loaded the file using source command
+Checked version using mvn -v
+
+Maven installed successfully.
+
+Jenkins Installation
+
+Jenkins is a CI/CD automation tool which builds, tests and deploys application automatically.
+
+Commands used:
+sudo yum update -y
+Added Jenkins repo
+Imported Jenkins key
+Installed Jenkins
+Started Jenkins service
+Enabled Jenkins service
+Checked status
+
+Jenkins service is running.
+
+Docker Installation
+
+Docker is used to containerize applications so they can run anywhere without environment issues.
+
+Commands used:
+sudo yum install docker -y
+Started docker service
+Enabled docker
+Added jenkins user to docker group
+Checked docker version
+
+Docker installed successfully.
